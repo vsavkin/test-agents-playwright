@@ -1,6 +1,5 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "defaultProject": "test-cloud-agents",
   "targetDefaults": {
     "build": {
       "cache": true
@@ -24,5 +23,8 @@
         "targetName": "e2e"
       }
     }
-  ]
+  ],
+  "defaultProject": "test-cloud-agents",
+  "nxCloudUrl": "https://staging.nx.app",
+  "nxCloudAccessToken": "ODI0N2NjNzgtMDI4OC00OTBmLThjYjEtOTMwNDJlNGZkYTQ4fHJlYWQtd3JpdGU="
 }

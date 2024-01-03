@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "build": "nx run-many -t build --dte",
+    "e2e": "nx run-many -t e2e-ci --dte"
   },
   "dependencies": {
     "react": "^18.2.0",
