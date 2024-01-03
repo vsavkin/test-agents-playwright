@@ -24,6 +24,7 @@
       }
     }
   ],
+  "bust": 1,
   "defaultProject": "test-cloud-agents",
   "nxCloudUrl": "https://staging.nx.app",
   "nxCloudAccessToken": "ODI0N2NjNzgtMDI4OC00OTBmLThjYjEtOTMwNDJlNGZkYTQ4fHJlYWQtd3JpdGU="

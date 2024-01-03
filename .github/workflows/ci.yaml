@@ -22,7 +22,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '20'
-      - run: npx nx-cloud@latest start-ci-run --distributes-on="10 linux-medium" --stop-agents-after="e2e-ci"
+      - run: npx nx-cloud@latest start-ci-run --distributes-on="10 linux-medium" 
       - run: npm ci --force
       - run: npx playwright install
       - name: Run build
