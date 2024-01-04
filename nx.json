@@ -1,0 +1,31 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "targetDefaults": {
+    "build": {
+      "cache": true
+    },
+    "e2e": {
+      "cache": true
+    }
+  },
+  "plugins": [
+    {
+      "plugin": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview"
+      }
+    },
+    {
+      "plugin": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
+    }
+  ],
+  "bust": 1,
+  "defaultProject": "test-cloud-agents",
+  "nxCloudUrl": "https://staging.nx.app",
+  "nxCloudAccessToken": "ODI0N2NjNzgtMDI4OC00OTBmLThjYjEtOTMwNDJlNGZkYTQ4fHJlYWQtd3JpdGU="
+}

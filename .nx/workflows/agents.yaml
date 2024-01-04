@@ -1,0 +1,10 @@
+launch-templates:
+  linux-medium:
+    resourceClass: "docker_linux_amd64/medium"
+    init-steps:
+      - name: checkout repo
+        uses: 'nrwl/nx-cloud-workflows/main/workflow-steps/checkout/main.yaml'
+      - name: NPM Install
+        script: 'npm ci --force'
+      - name: Playwright install
+        script: 'npx playwright install'

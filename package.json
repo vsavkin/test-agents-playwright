@@ -4,11 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "e2e": "cd e2e && playwright test --workers=1"
+    "build": "nx run-many -t build --dte",
+    "e2e": "nx run-many -t e2e-ci --dte"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -25,6 +22,12 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
-    "@playwright/test": "^1.36.0"
+    "@playwright/test": "^1.36.0",
+    "nx": "17.3.0-canary.20240103-1d1d465",
+    "@nx/workspace": "17.3.0-canary.20240103-1d1d465",
+    "@nx/devkit": "17.3.0-canary.20240103-1d1d465",
+    "@nx/js": "17.3.0-canary.20240103-1d1d465",
+    "@nx/playwright": "17.3.0-canary.20240103-1d1d465",
+    "@nx/vite": "17.3.0-canary.20240103-1d1d465"
   }
 }
